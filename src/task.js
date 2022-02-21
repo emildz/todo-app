@@ -1,6 +1,7 @@
 const { connectDb } = require("./connectDb");
 
 exports.createTask = (request, response) => {
+  console.log("request.body",request.body)
   const newTask = {
       task: request.body.task,
       done: false
