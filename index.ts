@@ -1,7 +1,7 @@
-const express = require('express')
-const cors = require('cors')
-const {getTasks, createTask, updateTask} = require('./src/task');
-const PORT = process.env.PORT || 3005;
+import express from 'express'
+import cors from  'cors'
+import  {getTasks, createTask, updateTask} from './src/tasks';
+const PORT = process.env.PORT || 3000;
 
 
 const app = express() 
